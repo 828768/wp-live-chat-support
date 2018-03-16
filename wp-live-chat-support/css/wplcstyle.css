@@ -1,0 +1,109 @@
+
+.wplc-chat-alert {
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #666;
+    border-radius: 15px;
+}
+
+.wplc-chat-alert--theme-3 {
+    background-color: #5a0031;
+}
+
+.wplc-chat-alert.is-active {
+    display: inline-block;
+}
+
+.wplc-chat-alert:after {
+    content: '\f0a2';
+    position: absolute;
+    left: 7px;
+    font-family: FontAwesome;
+    color: #fff;
+    line-height: 30px;
+}
+
+.bleeper-edit-message {
+    display:none;
+    cursor: pointer;
+    margin-left:10px;
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
+
+#wp-live-chat .wpcf_wrapper {
+    display:  block;
+    position: initial;
+    padding: 20px;
+}
+
+/**
+ * Mobile Responsiveness (Jarek)
+ */
+@media (max-width: 767px) {
+    #wp-live-chat-2 {
+        min-height: 420px;
+        top: 2px;
+    }
+
+    #wp-live-chat.classic {
+        right: 30px !important;
+    }
+
+    #wp-live-chat.classic.wplc_right {
+        right: 0 !important;
+    }
+
+    #wp-live-chat.classic.wplc_left {
+        right: auto !important;
+    }
+
+    #wp-live-chat.classic.is-active {
+        top: 2px;
+    }
+
+    #wp-live-chat.mobile-active #wp-live-chat-2 {
+        min-height: auto;
+        top: auto;
+    }
+
+    #wp-live-chat-inner {
+        overflow-y: scroll;
+    }
+
+    #wp-live-chat-4 {
+        top: 2px !important;
+        bottom: 150px !important;
+    }
+
+    .wplc_left #wp-live-chat-4 {
+        bottom: 80px !important;
+    }
+
+    #wp-live-chat-4.is-full-height {
+        bottom: 70px !important;
+    }
+
+    #wp-live-chat.is-full-height.classic {
+        top: -40px;
+    }
+
+    .wplc_left #wp-live-chat-4 {
+        width: 225px;
+    }
+
+    .modern[original_pos="bottom_left"] #wp-live-chat-4 {
+        width: 310px;
+    }
+}
+
+/* Gutenberg styles */
+#wplc-chat-box.disabled {
+    display: none;
+}
